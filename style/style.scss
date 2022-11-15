@@ -9,4 +9,23 @@ html, body{
 
 body{
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    background-color: red;
+    background-image: url('../img/clouds-3994154_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+    width: 80vw;
+    height: 80vh;
+    padding: 15px;
+    input{
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        border-bottom: 1px solid gray;
+    }
 }

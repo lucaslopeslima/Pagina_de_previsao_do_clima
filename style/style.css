@@ -11,5 +11,31 @@ html, body {
 
 body {
   background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background {
+  background-color: red;
+  background-image: url("../img/clouds-3994154_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 35px;
+  width: 80vw;
+  height: 80vh;
+  padding: 15px;
+}
+
+.background input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid gray;
 }
 /*# sourceMappingURL=style.css.map */
