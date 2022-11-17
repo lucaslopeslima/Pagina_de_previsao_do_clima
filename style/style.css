@@ -102,7 +102,6 @@ main .pannel svg {
 }
 
 main .pannel .pannel-content {
-  background-color: red;
   border-radius: 0px 0px 35px 35px;
   padding: 5px;
   width: 100%;
@@ -114,7 +113,6 @@ main .pannel .pannel-content {
 
 main .pannel .pannel-content h1 {
   text-align: center;
-  background-color: green;
   font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
