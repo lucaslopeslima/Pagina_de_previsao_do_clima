@@ -82,14 +82,6 @@ main .background .display .temp-scale {
   top: 50px;
 }
 
-main .background .pannel {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 60px 60px 0px 0px;
-  padding: 25px;
-}
-
 main .pannel {
   /* width: 80vw;
         max-width: 500px; */
