@@ -22,6 +22,7 @@ main{
     .background{
         /* background-color: red; */
         background-image: url('../img/clouds-3994154_960_720.jpg');
+        background-image: url('../img/star-4167939_960_720.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 35px;
@@ -29,42 +30,65 @@ main{
         max-width: 500px;
         height: 80vh; */
         height: 100%;
-        padding: 15px;
+        padding: 25px;
+        padding-top: 50px;
         .input-wrap{
+            background-color: rgba(255, 255, 255, 0.324);
+            width: fit-content;
+            padding: 3px;
+            padding-left: 6px;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+            color: rgba(255, 255, 255, 0.85);
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.383);
+            }
             input{
-                background-color: rgba(255, 255, 255, 0);
+                background-color: #ffffff00;
+                color: white;
                 border: none;
-                border-bottom: 1px solid gray;
+                border-bottom: 1px solid #d6d5d5;
                 border-radius: 2px;
                 padding: 2px;
                 font-weight: bold;
-                &:hover{
-                    background-color: rgba(255, 255, 255, 0.383);
-                }
                 &:focus{
-                    border: none;
+                    /* border: none; */
                     outline: none;
                 }
-            }    
+            }
+            button{
+                padding: 6px;
+                border-radius: 5px;
+                border: none;
+                border-top: 1px solid #ffffff61;
+                background-color: #5c5c5cad;
+                color: white;
+                &:active{
+                    border: none;
+                    padding-top: 7px;
+                    background-color: #3c3c3cad;
+                }
+            }
         }
         .display{
-            
+            width: 100%;
             position: relative;
+            margin-top: 15px;
             /* background-color: green; */
           
             .temp{
-                font-size: 18em;
-                background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.202));
+                font-size: 12em;
+                background: -webkit-linear-gradient(#ffffff, #ffffff34);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             .temp-scale{
-                font-size: 8em;
-                background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.202));
+                font-size: 5em;
+                background: -webkit-linear-gradient(#ffffff, #ffffff34);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 position: absolute;
-                top: 50px;
+                top: 40px;
             }
         }
     }
