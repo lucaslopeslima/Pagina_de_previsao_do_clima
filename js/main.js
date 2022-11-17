@@ -54,16 +54,22 @@ fetch(url)
 WMO Weather interpretation codes (WW)
 Code	Description
 0	        Clear sky <i class="fa-light fa-sun"></i>
+
 1, 2, 3	    Mainly clear, partly cloudy, and overcast <i class="fa-regular fa-sun-cloud"></i>
+
 45, 48	    Fog and depositing rime fog <i class="fa-regular fa-smog"></i>
+
 51, 53, 55	Drizzle: Light, moderate, and dense intensity <i class="fa-duotone fa-raindrops"></i> <i class="fa-solid fa-cloud-drizzle"></i>
 56, 57	    Freezing Drizzle: Light and dense intensity <i class="fa-duotone fa-temperature-snow"></i>
+
 61, 63, 65	Rain: Slight, moderate and heavy intensity <i class="fa-duotone fa-umbrella"></i>
 66, 67	    Freezing Rain: Light and heavy intensity 
+
 71, 73, 75	Snow fall: Slight, moderate, and heavy intensity
 77	        Snow grains
 80, 81, 82	Rain showers: Slight, moderate, and violent <i class="fa-solid fa-cloud-showers-heavy"></i>
 85, 86	    Snow showers slight and heavy <i class="fa-solid fa-face-icicles"></i>
+
 95 *	    Thunderstorm: Slight or moderate <i class="fa-duotone fa-cloud-bolt"></i>
 96, 99 *	Thunderstorm with slight and heavy hail <i class="fa-duotone fa-cloud-bolt"></i>
 */
