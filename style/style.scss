@@ -71,6 +71,7 @@ main{
             }
         }
         .display{
+            /* opacity: 0; */
             width: 100%;
             position: relative;
             margin-top: 15px;
@@ -119,6 +120,7 @@ main{
                 font-size: 1.5rem;
             }
         }
+        /* transform: translateY(+150%); */
     }
 }
 
