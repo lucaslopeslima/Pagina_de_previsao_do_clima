@@ -39,6 +39,7 @@ fetch(geo)
         console.log(data2.current_weather.weathercode)
         setLatitude(lat.toFixed(2))
         setLongitute(long.toFixed(2))
+        setTemp(data2.current_weather.temperature)
         setWindSpeed(data2.current_weather.windspeed)
         setWeather(data2.current_weather.weathercode)
         
@@ -59,9 +60,13 @@ function setLongitute(long){
         let longitute = document.getElementById('long')
         longitute.innerText = long
 }
+function setTemp(temp){
+        let tempetature = document.getElementById('temp')
+        tempetature.innerText = temp.toFixed(0)
+}
 function setWindSpeed(wspeed){
         let windspeed = document.getElementById('windspeed')
-        windspeed.innerText = wspeed + ' kmh'
+        windspeed.innerText = wspeed //+ ' kmh'
 }
 function setWeather(code){
   console.log('code in')

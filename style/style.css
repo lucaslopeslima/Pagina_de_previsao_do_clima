@@ -229,7 +229,7 @@ main {
   width: 80vw;
   max-width: 400px;
   height: 80vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 main .background {
