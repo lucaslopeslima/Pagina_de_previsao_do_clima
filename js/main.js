@@ -81,32 +81,32 @@ function setWeather(code){
   const tempestade = [95,96,99]
   if(ceuaberto.includes(code)){
     console.log('ceuaberto')
-    setimg.innerHTML = '<img src="../img/icons/sun.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
     
   }
   if(parcialnub.includes(code)){
     console.log('parcialnub')
-    setimg.innerHTML = '<img src="../img/icons/parcialnub.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/parcialnub.png" alt="">'
   }
   if(nublado.includes(code)){
     console.log('nublado')
-    setimg.innerHTML = '<img src="../img/icons/nublado.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/nublado.png" alt="">'
   }
   if(fog.includes(code)){
     chovisco.log('fog')
-    setimg.innerHTML = '<img src="../img/icons/fog.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/fog.png" alt="">'
   }
   if(chuva.includes(code)){
     console.log('chuva')
-    setimg.innerHTML = '<img src="../img/icons/rain.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/rain.png" alt="">'
   }
   if(neve.includes(code)){
     console.log('neve')
-    setimg.innerHTML = '<img src="../img/icons/snow.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/snow.png" alt="">'
   }
   if(tempestade.includes(code)){
     console.log('tempestade')
-    setimg.innerHTML = '<img src="../img/icons/stormrain.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/stormrain.png" alt="">'
   }
 }
 
