@@ -1,0 +1,64 @@
+@keyframes pannelUp{
+    from{
+        transform: translateY(+150%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+@keyframes svgSlideUp{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-50%);
+    }
+}
+@keyframes inputSlide{
+    from{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 40px;
+        scale: 1.2;
+    }
+    to{
+        position: absolute;
+        top: 50px;
+        transform: translateY(0);
+        margin-left: 25px;
+        scale: 1;
+    }
+}
+@keyframes displayOn{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 0;
+    }
+    18%{
+        opacity: 1;
+    }
+    23%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+    /* 89%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    } */
+}
