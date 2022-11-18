@@ -1,6 +1,8 @@
 // https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m
-let cityName = 'London'
+let cityName = 'Teresina'
 let geo = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName},&limit=1&appid=2bcb7be76a6327aeef106952bdf73c70`
+let lat = ''
+let long = ''
 
 fetch(geo)
 .then((res)=>{
@@ -28,29 +30,71 @@ fetch(geo)
         console.log(data2.current_weather.temperature + ' °C')
         console.log(data2.current_weather.windspeed + ' kmh')
         console.log(data2.current_weather.weathercode)
+        setLatitude(lat.toFixed(2))
+        setLongitute(long.toFixed(2))
+        setWindSpeed(data2.current_weather.windspeed)
+        setWeather(data2.current_weather.weathercode)
+        
         
     });
 })
+function setLatitude(lat){
+        let latitude = document.getElementById('lat')
+        latitude.innerText = lat
+}
+function setLongitute(long){
+        let longitute = document.getElementById('long')
+        longitute.innerText = long
+}
+function setWindSpeed(wspeed){
+        let windspeed = document.getElementById('windspeed')
+        windspeed.innerText = wspeed + ' kmh'
+}
+function setWeather(code){
+  console.log('code in')
+  let setimg = document.getElementById('wheatherCodeIMG')
+  const ceuaberto = [1]
+  const parcialnub = [1,2]
+  const nublado = [3]
+  const fog = [45,48]
+  const chovisco = [51,53,55,56,57]
+  const chuva = [61,63,65,66,67]
+  const neve = [71,73,75,77,80,81,82,85,86]
+  const tempestade = [95,96,99]
+  if(ceuaberto.includes(code)){
+    console.log('ceuaberto')
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    
+  }
+  if(parcialnub.includes(code)){
+    console.log('parcialnub')
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+  }
+  if(nublado.includes(code)){
+    console.log('nublado')
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+  }
+  if(fog.includes(code)){
+    chovisco.log('fog')
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+  }
+  if(chuva.includes(code)){
+    console.log('chuva')
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+  }
+  if(neve.includes(code)){
+    console.log('neve')
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+  }
+  if(tempestade.includes(code)){
+    console.log('tempestade')
+    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+  }
 
 
 
-
-/* let lat = -5.07
-let long = -42.77
-
-let url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current_weather=true`
-
-console.log(url)
-
-fetch(url)
-.then((res2)=>{
-  console.log(res2);
-  return res2.json()
-})
-.then((data2)=> {
-  console.log(data2)
-}); */
-
+}
+//setDataToDOM()
 
 
 /*
