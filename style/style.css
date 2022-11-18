@@ -56,7 +56,7 @@
     top: 50px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    margin-left: 25px;
+    margin-left: 10px;
     scale: 1;
   }
 }
@@ -75,7 +75,7 @@
     top: 50px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    margin-left: 25px;
+    margin-left: 10px;
     scale: 1;
   }
 }
@@ -249,29 +249,29 @@ main .background .input-wrap button:active {
 }
 
 main .background .display {
-  opacity: 0;
-  -webkit-animation: displayOn 1.5s ease-in-out 2.5s forwards;
-          animation: displayOn 1.5s ease-in-out 2.5s forwards;
+  opacity: 1;
   width: 100%;
   position: relative;
-  margin-top: 65px;
+  margin-top: 20px;
+  font-family: 'Playfair Display', serif;
   /* background-color: green; */
 }
 
 main .background .display .temp {
-  font-size: 12em;
+  font-size: 17em;
   background: -webkit-linear-gradient(#ffffff, #ffffff34);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 main .background .display .temp-scale {
-  font-size: 5em;
+  font-size: 6em;
   background: -webkit-linear-gradient(#ffffff, #ffffff34);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 40px;
+  top: 120px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main .pannel {
@@ -279,11 +279,13 @@ main .pannel {
         max-width: 500px; */
   width: 100%;
   height: 200px;
-  background-color: #e1e1e1;
+  /* background-color: #e1e1e1; */
+  background-color: #ffffff;
   border-radius: 0px 0px 35px 35px;
   position: absolute;
   bottom: 0;
   /* box-shadow: 0px -14px 7px 0px rgba(0,0,0,0.29); */
+  font-family: 'Open Sans', sans-serif;
 }
 
 main .pannel svg {
@@ -324,7 +326,7 @@ main .pannel .icons-wrap .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 main .pannel .icons-wrap .icons .icons-display {
@@ -336,6 +338,12 @@ main .pannel .icons-wrap .icons .icons-display {
 
 main .pannel .icons-wrap .icons .icons-display i {
   font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+main .pannel .icons-wrap .icons .icons-display img {
+  width: 52px;
+  height: 52px;
   margin-bottom: 15px;
 }
 
