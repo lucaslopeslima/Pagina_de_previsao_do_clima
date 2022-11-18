@@ -62,3 +62,28 @@
         opacity: 1;
     } */
 }
+
+@keyframes latlong{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes windspeed{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes wheatercode{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

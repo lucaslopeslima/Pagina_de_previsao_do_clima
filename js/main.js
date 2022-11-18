@@ -1,11 +1,15 @@
 // https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m
-let cityName = 'Teresina'
-let geo = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName},&limit=1&appid=2bcb7be76a6327aeef106952bdf73c70`
-let lat = ''
-let long = ''
+
 
 function start(){
-
+  let cityName = document.getElementById('city')
+  console.log(cityName.value)
+  let geo = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName.value},&limit=1&appid=2bcb7be76a6327aeef106952bdf73c70`
+  if(cityName.value == ''){
+    return
+  }
+  animateFront()
+  console.log(cityName.value)
 
 fetch(geo)
 .then((res)=>{
@@ -40,8 +44,8 @@ fetch(geo)
         
         
     });
+    
 })
-
 
 } // FUNCTION START
 
@@ -102,6 +106,24 @@ function setWeather(code){
 }
 
 //ANIMATION FUNCTIONS
+
+function animateFront(){
+  let inputanim = document.querySelector('.input-wrap')
+  inputanim.style.cssText = 'animation: inputSlide 1.5s ease-in-out .5s forwards;'
+  let displayanim = document.querySelector('.display')
+  displayanim.style.cssText = 'animation: displayOn 1.5s ease-in-out 2.5s forwards;'
+  let svganim = document.querySelector('svg')
+  svganim.style.cssText = 'animation: svgSlideUp .5s linear 4.5s forwards;'
+  let pannelanim = document.querySelector('.pannel')
+  pannelanim.style.cssText = 'animation: pannelUp 1.5s ease-out 2.5s forwards;'
+  let latlonganim = document.querySelector('.lat-long')
+  latlonganim.style.cssText = 'animation: latlong .5s linear 4.5s forwards;'
+  let wspeedanim = document.querySelector('.windspeed')
+  wspeedanim.style.cssText = 'animation: windspeed .5s linear 4.8s forwards;'
+  let wcode = document.querySelector('.weathercode')
+  wcode.style.cssText = 'animation: wheatercode .5s linear 5s forwards;'
+}
+
 
 //setDataToDOM()
 

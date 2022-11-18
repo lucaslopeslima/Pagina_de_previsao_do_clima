@@ -37,12 +37,13 @@ main{
         padding: 25px;
         padding-top: 50px;
         .input-wrap{
+            z-index: 9999;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             margin-left: 40px;
             scale: 1.2;
-            animation: inputSlide 1.5s ease-in-out .5s forwards;
+            //animation: inputSlide 1.5s ease-in-out .5s forwards;
                 //name duration mode delay interation
             background-color: rgba(255, 255, 255, 0.324);
             width: fit-content;
@@ -83,7 +84,7 @@ main{
         }
         .display{
             opacity: 0;
-            animation: displayOn 1.5s ease-in-out 2.5s forwards;
+            //animation: displayOn 1.5s ease-in-out 2.5s forwards;
                 //name duration mode delay interation
             width: 100%;
             position: relative;
@@ -126,7 +127,7 @@ main{
             /* background-color: green; */
             /* transform: translateY(-50%); */
             width: 100%;
-            animation: svgSlideUp .5s linear 4.5s forwards;
+            //animation: svgSlideUp .5s linear 4.5s forwards;
                 //name duration mode delay interation
         }
         .pannel-content{
@@ -143,7 +144,7 @@ main{
             }
         }
         transform: translateY(+150%);
-        animation: pannelUp 1.5s ease-out 2.5s forwards;
+        //animation: pannelUp 1.5s ease-out 2.5s forwards;
                 //name duration mode delay interation
         .icons-wrap{
             /* background-color: green; */
@@ -175,19 +176,19 @@ main{
                     
                 }
                 .lat-long{
-                    i{
-                      color: blue;  
-                    }
+                    opacity: 0;
+                    //animation: latlong .5s linear 4.5s forwards;
+                            //name duration mode delay interation
                 }
                 .windspeed{
-                    i{
-                        color: white;
-                    }
+                    opacity: 0;
+                    //animation: windspeed .5s linear 4.8s forwards;
+                            //name duration mode delay interation
                 }
                 .weathercode{
-                    i{
-                        color: #FCC44C;
-                    }
+                    opacity: 0;
+                    //animation: wheatercode .5s linear 5s forwards;
+                            //name duration mode delay interation
                 }
             }
         }
