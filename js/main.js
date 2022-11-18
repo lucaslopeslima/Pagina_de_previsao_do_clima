@@ -22,10 +22,13 @@ fetch(geo)
     })
     .then((data2)=> {
         console.log(data2)
+        console.log(lat.toFixed(2))
+        console.log(long.toFixed(2))
         console.log(data2.current_weather)
         console.log(data2.current_weather.temperature + ' °C')
         console.log(data2.current_weather.windspeed + ' kmh')
         console.log(data2.current_weather.weathercode)
+        
     });
 })
 
