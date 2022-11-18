@@ -71,6 +71,8 @@ function setWindSpeed(wspeed){
 function setWeather(code){
   console.log('code in')
   let setimg = document.getElementById('wheatherCodeIMG')
+  let wheatherCodeTXT = document.getElementById('wheatherCodeTXT')
+  console.log(wheatherCodeTXT)
   const ceuaberto = [1]
   const parcialnub = [1,2]
   const nublado = [3]
@@ -82,31 +84,38 @@ function setWeather(code){
   if(ceuaberto.includes(code)){
     console.log('ceuaberto')
     setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    wheatherCodeTXT.innerText = 'Céu Limpo'
     
   }
   if(parcialnub.includes(code)){
     console.log('parcialnub')
     setimg.innerHTML = '<img src="img/icons/parcialnub.png" alt="">'
+    wheatherCodeTXT.innerText = 'Parcial Nublado'
   }
   if(nublado.includes(code)){
     console.log('nublado')
     setimg.innerHTML = '<img src="img/icons/nublado.png" alt="">'
+    wheatherCodeTXT.innerText = 'Nublado'
   }
   if(fog.includes(code)){
     chovisco.log('fog')
     setimg.innerHTML = '<img src="img/icons/fog.png" alt="">'
+    wheatherCodeTXT.innerText = 'Neblina'
   }
   if(chuva.includes(code)){
     console.log('chuva')
     setimg.innerHTML = '<img src="img/icons/rain.png" alt="">'
+    wheatherCodeTXT.innerText = 'Chuva'
   }
   if(neve.includes(code)){
     console.log('neve')
     setimg.innerHTML = '<img src="img/icons/snow.png" alt="">'
+    wheatherCodeTXT.innerText = 'Neve'
   }
   if(tempestade.includes(code)){
     console.log('tempestade')
     setimg.innerHTML = '<img src="img/icons/stormrain.png" alt="">'
+    wheatherCodeTXT.innerText = 'Tempestade'
   }
 }
 
