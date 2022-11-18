@@ -254,7 +254,7 @@ main .background .display {
           animation: displayOn 1.5s ease-in-out 2.5s forwards;
   width: 100%;
   position: relative;
-  margin-top: 15px;
+  margin-top: 65px;
   /* background-color: green; */
 }
 
@@ -278,24 +278,18 @@ main .pannel {
   /* width: 80vw;
         max-width: 500px; */
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-color: #e1e1e1;
   border-radius: 0px 0px 35px 35px;
   position: absolute;
   bottom: 0;
   /* box-shadow: 0px -14px 7px 0px rgba(0,0,0,0.29); */
-  -webkit-transform: translateY(150%);
-          transform: translateY(150%);
-  -webkit-animation: pannelUp 1.5s ease-out 2.5s forwards;
-          animation: pannelUp 1.5s ease-out 2.5s forwards;
 }
 
 main .pannel svg {
   /* background-color: green; */
   /* transform: translateY(-50%); */
   width: 100%;
-  -webkit-animation: svgSlideUp .5s linear 4.5s forwards;
-          animation: svgSlideUp .5s linear 4.5s forwards;
 }
 
 main .pannel .pannel-content {
@@ -311,5 +305,49 @@ main .pannel .pannel-content {
 main .pannel .pannel-content h1 {
   text-align: center;
   font-size: 1.5rem;
+}
+
+main .pannel .icons-wrap {
+  /* background-color: green; */
+  width: 95%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+main .pannel .icons-wrap .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+main .pannel .icons-wrap .icons .icons-display {
+  width: 30%;
+  height: 90px;
+  text-align: center;
+  /* background-color: red; */
+}
+
+main .pannel .icons-wrap .icons .icons-display i {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+main .pannel .icons-wrap .icons .lat-long i {
+  color: blue;
+}
+
+main .pannel .icons-wrap .icons .windspeed i {
+  color: white;
+}
+
+main .pannel .icons-wrap .icons .weathercode i {
+  color: #FCC44C;
 }
 /*# sourceMappingURL=style.css.map */
