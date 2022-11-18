@@ -1,3 +1,151 @@
+@-webkit-keyframes pannelUp {
+  from {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes pannelUp {
+  from {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes svgSlideUp {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@keyframes svgSlideUp {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@-webkit-keyframes inputSlide {
+  from {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 40px;
+    scale: 1.2;
+  }
+  to {
+    position: absolute;
+    top: 50px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-left: 25px;
+    scale: 1;
+  }
+}
+
+@keyframes inputSlide {
+  from {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-left: 40px;
+    scale: 1.2;
+  }
+  to {
+    position: absolute;
+    top: 50px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-left: 25px;
+    scale: 1;
+  }
+}
+
+@-webkit-keyframes displayOn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+  /* 89%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    } */
+}
+
+@keyframes displayOn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+  /* 89%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    } */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +175,7 @@ main {
   width: 80vw;
   max-width: 400px;
   height: 80vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 main .background {
@@ -46,6 +194,14 @@ main .background {
 }
 
 main .background .input-wrap {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 40px;
+  scale: 1.2;
+  -webkit-animation: inputSlide 1.5s ease-in-out .5s forwards;
+          animation: inputSlide 1.5s ease-in-out .5s forwards;
   background-color: rgba(255, 255, 255, 0.324);
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -93,7 +249,9 @@ main .background .input-wrap button:active {
 }
 
 main .background .display {
-  /* opacity: 0; */
+  opacity: 0;
+  -webkit-animation: displayOn 1.5s ease-in-out 2.5s forwards;
+          animation: displayOn 1.5s ease-in-out 2.5s forwards;
   width: 100%;
   position: relative;
   margin-top: 15px;
@@ -125,15 +283,19 @@ main .pannel {
   border-radius: 0px 0px 35px 35px;
   position: absolute;
   bottom: 0;
-  -webkit-box-shadow: 0px -14px 7px 0px rgba(0, 0, 0, 0.29);
-          box-shadow: 0px -14px 7px 0px rgba(0, 0, 0, 0.29);
-  /* transform: translateY(+150%); */
+  /* box-shadow: 0px -14px 7px 0px rgba(0,0,0,0.29); */
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+  -webkit-animation: pannelUp 1.5s ease-out 2.5s forwards;
+          animation: pannelUp 1.5s ease-out 2.5s forwards;
 }
 
 main .pannel svg {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  /* background-color: green; */
+  /* transform: translateY(-50%); */
   width: 100%;
+  -webkit-animation: svgSlideUp .5s linear 4.5s forwards;
+          animation: svgSlideUp .5s linear 4.5s forwards;
 }
 
 main .pannel .pannel-content {

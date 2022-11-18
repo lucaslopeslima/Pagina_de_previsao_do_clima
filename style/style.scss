@@ -1,3 +1,7 @@
+//IMPORTS
+@import 'animate';
+
+//RESET GLOBAL
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
 html, body{
     height: 100%;
 }
-
+///////////////////////////////////////////
 body{
     background-color: black;
     display: flex;
@@ -18,7 +22,7 @@ main{
     width: 80vw;
     max-width: 400px;
     height: 80vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     .background{
         /* background-color: red; */
         background-image: url('../img/clouds-3994154_960_720.jpg');
@@ -33,6 +37,13 @@ main{
         padding: 25px;
         padding-top: 50px;
         .input-wrap{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 40px;
+            scale: 1.2;
+            animation: inputSlide 1.5s ease-in-out .5s forwards;
+                //name duration mode delay interation
             background-color: rgba(255, 255, 255, 0.324);
             width: fit-content;
             padding: 3px;
@@ -71,7 +82,9 @@ main{
             }
         }
         .display{
-            /* opacity: 0; */
+            opacity: 0;
+            animation: displayOn 1.5s ease-in-out 2.5s forwards;
+                //name duration mode delay interation
             width: 100%;
             position: relative;
             margin-top: 15px;
@@ -102,10 +115,13 @@ main{
         border-radius: 0px 0px 35px 35px;
         position: absolute;
         bottom: 0;
-        box-shadow: 0px -14px 7px 0px rgba(0,0,0,0.29);
+        /* box-shadow: 0px -14px 7px 0px rgba(0,0,0,0.29); */
         svg{
-            transform: translateY(-50%);
+            /* background-color: green; */
+            /* transform: translateY(-50%); */
             width: 100%;
+            animation: svgSlideUp .5s linear 4.5s forwards;
+                //name duration mode delay interation
         }
         .pannel-content{
             border-radius: 0px 0px 35px 35px;
@@ -120,7 +136,10 @@ main{
                 font-size: 1.5rem;
             }
         }
-        /* transform: translateY(+150%); */
+        transform: translateY(+150%);
+        animation: pannelUp 1.5s ease-out 2.5s forwards;
+                //name duration mode delay interation
+        
     }
 }
 
