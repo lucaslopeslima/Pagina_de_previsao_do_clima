@@ -288,6 +288,11 @@ main .pannel {
   bottom: 0;
   /* box-shadow: 0px -14px 7px 0px rgba(0,0,0,0.29); */
   font-family: 'Open Sans', sans-serif;
+  color: #7b7b7b;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+  -webkit-animation: pannelUp 1.5s ease-out 2.5s forwards;
+          animation: pannelUp 1.5s ease-out 2.5s forwards;
 }
 
 main .pannel svg {
@@ -331,7 +336,7 @@ main .pannel .icons-wrap .icons {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px;
-  color: #d6d6d6;
+  color: #c5c4c4;
 }
 
 main .pannel .icons-wrap .icons .icons-display {

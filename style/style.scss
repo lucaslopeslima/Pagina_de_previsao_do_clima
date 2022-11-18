@@ -120,6 +120,7 @@ main{
         bottom: 0;
         /* box-shadow: 0px -14px 7px 0px rgba(0,0,0,0.29); */
         font-family: 'Open Sans', sans-serif;
+        color: rgb(123, 123, 123);
 
         svg{
             /* background-color: green; */
@@ -141,8 +142,8 @@ main{
                 font-size: 1.5rem;
             }
         }
-        //transform: translateY(+150%);
-        //animation: pannelUp 1.5s ease-out 2.5s forwards;
+        transform: translateY(+150%);
+        animation: pannelUp 1.5s ease-out 2.5s forwards;
                 //name duration mode delay interation
         .icons-wrap{
             /* background-color: green; */
@@ -155,7 +156,7 @@ main{
                 align-items: center;
                 justify-content: space-between;
                 padding-top: 20px;
-                color: rgb(214, 214, 214);
+                color: rgb(197, 196, 196);
                 .icons-display{
                     width: 30%;
                     height: 90px;
