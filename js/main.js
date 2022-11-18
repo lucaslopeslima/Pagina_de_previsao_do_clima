@@ -4,6 +4,9 @@ let geo = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName},&limit=1&a
 let lat = ''
 let long = ''
 
+function start(){
+
+
 fetch(geo)
 .then((res)=>{
     console.log(res)
@@ -38,6 +41,12 @@ fetch(geo)
         
     });
 })
+
+
+} // FUNCTION START
+
+
+// SET DATA TO DOM FUNCTIONS
 function setLatitude(lat){
         let latitude = document.getElementById('lat')
         latitude.innerText = lat
@@ -68,32 +77,32 @@ function setWeather(code){
   }
   if(parcialnub.includes(code)){
     console.log('parcialnub')
-    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/parcialnub.png" alt="">'
   }
   if(nublado.includes(code)){
     console.log('nublado')
-    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/nublado.png" alt="">'
   }
   if(fog.includes(code)){
     chovisco.log('fog')
-    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/fog.png" alt="">'
   }
   if(chuva.includes(code)){
     console.log('chuva')
-    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/rain.png" alt="">'
   }
   if(neve.includes(code)){
     console.log('neve')
-    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/snow.png" alt="">'
   }
   if(tempestade.includes(code)){
     console.log('tempestade')
-    setimg.innerHTML = '<img src="img/icons/sun.png" alt="">'
+    setimg.innerHTML = '<img src="img/icons/stormrain.png" alt="">'
   }
-
-
-
 }
+
+//ANIMATION FUNCTIONS
+
 //setDataToDOM()
 
 
