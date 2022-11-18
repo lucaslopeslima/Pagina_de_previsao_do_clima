@@ -82,8 +82,8 @@ main{
             }
         }
         .display{
-            opacity: 1;
-            //animation: displayOn 1.5s ease-in-out 2.5s forwards;
+            opacity: 0;
+            animation: displayOn 1.5s ease-in-out 2.5s forwards;
                 //name duration mode delay interation
             width: 100%;
             position: relative;
@@ -125,7 +125,7 @@ main{
             /* background-color: green; */
             /* transform: translateY(-50%); */
             width: 100%;
-            //animation: svgSlideUp .5s linear 4.5s forwards;
+            animation: svgSlideUp .5s linear 4.5s forwards;
                 //name duration mode delay interation
         }
         .pannel-content{
@@ -155,6 +155,7 @@ main{
                 align-items: center;
                 justify-content: space-between;
                 padding-top: 20px;
+                color: rgb(214, 214, 214);
                 .icons-display{
                     width: 30%;
                     height: 90px;
