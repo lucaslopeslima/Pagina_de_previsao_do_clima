@@ -146,6 +146,60 @@
     } */
 }
 
+@-webkit-keyframes latlong {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes latlong {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes windspeed {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes windspeed {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes wheatercode {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wheatercode {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -194,14 +248,13 @@ main .background {
 }
 
 main .background .input-wrap {
+  z-index: 9999;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin-left: 40px;
   scale: 1.2;
-  -webkit-animation: inputSlide 1.5s ease-in-out .5s forwards;
-          animation: inputSlide 1.5s ease-in-out .5s forwards;
   background-color: rgba(255, 255, 255, 0.324);
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -250,8 +303,6 @@ main .background .input-wrap button:active {
 
 main .background .display {
   opacity: 0;
-  -webkit-animation: displayOn 1.5s ease-in-out 2.5s forwards;
-          animation: displayOn 1.5s ease-in-out 2.5s forwards;
   width: 100%;
   position: relative;
   margin-top: 20px;
@@ -291,16 +342,12 @@ main .pannel {
   color: #7b7b7b;
   -webkit-transform: translateY(150%);
           transform: translateY(150%);
-  -webkit-animation: pannelUp 1.5s ease-out 2.5s forwards;
-          animation: pannelUp 1.5s ease-out 2.5s forwards;
 }
 
 main .pannel svg {
   /* background-color: green; */
   /* transform: translateY(-50%); */
   width: 100%;
-  -webkit-animation: svgSlideUp .5s linear 4.5s forwards;
-          animation: svgSlideUp .5s linear 4.5s forwards;
 }
 
 main .pannel .pannel-content {
@@ -357,15 +404,15 @@ main .pannel .icons-wrap .icons .icons-display img {
   margin-bottom: 15px;
 }
 
-main .pannel .icons-wrap .icons .lat-long i {
-  color: blue;
+main .pannel .icons-wrap .icons .lat-long {
+  opacity: 0;
 }
 
-main .pannel .icons-wrap .icons .windspeed i {
-  color: white;
+main .pannel .icons-wrap .icons .windspeed {
+  opacity: 0;
 }
 
-main .pannel .icons-wrap .icons .weathercode i {
-  color: #FCC44C;
+main .pannel .icons-wrap .icons .weathercode {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
