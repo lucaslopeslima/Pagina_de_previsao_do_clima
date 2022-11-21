@@ -1,5 +1,6 @@
 //IMPORTS
 @import 'animate';
+@import 'medias';
 
 //RESET GLOBAL
 *{
@@ -22,6 +23,7 @@ main{
     width: 80vw;
     max-width: 400px;
     height: 80vh;
+    max-height: 675px;
     overflow: hidden;
     .background{
         /* background-color: red; */

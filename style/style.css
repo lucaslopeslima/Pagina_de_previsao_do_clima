@@ -200,6 +200,15 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 400px;
+    max-height: 675px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -229,6 +238,7 @@ main {
   width: 80vw;
   max-width: 400px;
   height: 80vh;
+  max-height: 675px;
   overflow: hidden;
 }
 
