@@ -1,12 +1,23 @@
-# Pagina_de_previsão_do_clima
- Uma simples e divertida página de previsão do clima
+# Clima Hoje
+ 
+ 
+ 
+ 
+![climahj](https://user-images.githubusercontent.com/63620832/203171039-e319c9b1-b9b8-456f-92f2-88cb45f3619e.png)
 
 
-#Animations:
-    Movie no background;
+<br><br>
 
-    Search no meio, ao clicar no botão animar para o topo, diminuir o tamanho da box e deixar foward;
 
-    pannel oculto em baixo e desliza para cima ao clicar no botao search, finalizando foward;
-
-    o SVG surge em slow-mo apos o pannel, finalizando foward;
+# Conteúdo:
+- Documentação:
+  - API
+- Setup
+  - HTML
+  - Scss
+  - JS
+- Criação do projeto
+  - Estrutura de pasta
+- Projeto:
+  - Consumo de API REST.
+  - Manipulação do DOM
